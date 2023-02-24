@@ -1,0 +1,50 @@
+name: discyo
+description: App for cross-media recommendations and much more.
+version: 1.2.0+30
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cached_network_image: ^3.2.0
+  charts_flutter: ^0.12.0
+  cupertino_icons: ^1.0.4
+  flutter_inappwebview: ^5.7.2+3
+  http: ^0.13.0
+  image_picker: ^0.8.5+3
+  palette_generator: ^0.3.2
+  path: ^1.8.0
+  path_provider: ^2.0.4
+  provider: ^6.0.3
+  share_plus: ^4.0.7
+  shared_preferences: ^2.0.7
+  sign_in_with_apple: ^4.3.0
+  sqflite: ^2.0.1
+  tmdb_dart: ^0.2.1
+  uni_links: ^0.5.1
+  url_launcher: ^6.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.9.2"
+
+# RELEASE: Change icon and run 'flutter pub run flutter_launcher_icons:main' for other than dev builds
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/logo/android-dev.png"
+  image_path_ios: "assets/logo/ios-dev.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/other/
+  fonts:
+    - family:  DiscyoIcons
+      fonts:
+        - asset: assets/icons.ttf

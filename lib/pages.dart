@@ -1,0 +1,17 @@
+export 'package:discyo/pages/creators.dart';
+export 'package:discyo/pages/details.dart';
+export 'package:discyo/pages/discover.dart';
+export 'package:discyo/pages/edit_account.dart';
+export 'package:discyo/pages/email_unconfirmed.dart';
+export 'package:discyo/pages/forgot_password.dart';
+export 'package:discyo/pages/init_favorites.dart';
+export 'package:discyo/pages/init_providers.dart';
+export 'package:discyo/pages/list.dart';
+export 'package:discyo/pages/login.dart';
+export 'package:discyo/pages/missing_info.dart';
+export 'package:discyo/pages/onboarding.dart';
+export 'package:discyo/pages/register_confirm.dart';
+export 'package:discyo/pages/register_form.dart';
+export 'package:discyo/pages/search.dart';
+export 'package:discyo/pages/welcome.dart';
+export 'package:discyo/pages/yourself.dart';
