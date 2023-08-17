@@ -1,3 +1,17 @@
+/*
+ * Copyright (C) 2023  Petr Buchal, Vladimír Jeřábek, Martin Ivančo
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
 import 'package:flutter/material.dart';
 import 'package:discyo/components/dialogs.dart';
 import 'package:discyo/components/fields.dart';
@@ -70,8 +84,7 @@ class _MissingInfoPageState extends State<MissingInfoPage> {
           final re = r"^[a-zA-Z0-9_-]+$";
           if (!RegExp(re).hasMatch(value ?? ""))
             return localized.error("invalid_username_characters");
-          if (_usernameTaken)
-            return localized.error("username_in_use");
+          if (_usernameTaken) return localized.error("username_in_use");
           return null;
         },
       ));

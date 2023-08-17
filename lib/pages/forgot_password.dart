@@ -1,3 +1,17 @@
+/*
+ * Copyright (C) 2023  Petr Buchal, Vladimír Jeřábek, Martin Ivančo
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
 import 'package:discyo/components/dialogs.dart';
 import 'package:flutter/material.dart';
 import 'package:discyo/api.dart';
@@ -67,8 +81,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         localized.label("email"),
         enabled: !_mailSent,
         validator: (value) {
-          if (value?.isEmpty ?? true)
-            return localized.error("empty_email");
+          if (value?.isEmpty ?? true) return localized.error("empty_email");
           final re =
               r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+";
           if (!RegExp(re).hasMatch(value ?? ""))
@@ -86,8 +99,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           _codeController,
           localized.label("code"),
           validator: (value) {
-            if (value?.isEmpty ?? true)
-              return localized.error("empty_code");
+            if (value?.isEmpty ?? true) return localized.error("empty_code");
             return null;
           },
           key: _codeKey,

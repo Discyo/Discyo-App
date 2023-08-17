@@ -1,3 +1,17 @@
+/*
+ * Copyright (C) 2023  Petr Buchal, Vladimír Jeřábek, Martin Ivančo
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
 import 'package:discyo/localizations/localizations.dart';
 import 'package:discyo/models/media/medium.dart';
 
@@ -41,5 +55,6 @@ class Game extends Medium {
   String get release => year > 0 ? "$year" : "";
 
   @override
-  String creator(DiscyoLocalizations localized) => "${localized.label('developed_by')}\n${developers[0]}";
+  String creator(DiscyoLocalizations localized) =>
+      "${localized.label('developed_by')}\n${developers[0]}";
 }
