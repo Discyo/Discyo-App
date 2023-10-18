@@ -3,10 +3,10 @@
 This is a [Flutter](https://flutter.dev/) app made as a part of [Discyo](https://discyo.com/) - a cross-media recommendation platform project.
 
 <p align="left">
-  <img src="./docs/images/1.png" width="24.5%">
-  <img src="./docs/images/2.png" width="24.5%">
-  <img src="./docs/images/3.png" width="24.5%">
-  <img src="./docs/images/4.png" width="24.5%">
+  <img src="./docs/images/1.png" width="23.5%">
+  <img src="./docs/images/2.png" width="23.5%">
+  <img src="./docs/images/3.png" width="23.5%">
+  <img src="./docs/images/4.png" width="23.5%">
 </p>
 
 ## Getting started
