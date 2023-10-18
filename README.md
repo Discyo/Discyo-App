@@ -2,6 +2,13 @@
 
 This is a [Flutter](https://flutter.dev/) app made as a part of [Discyo](https://discyo.com/) - a cross-media recommendation platform project.
 
+<p align="left">
+  <img src="./docs/images/1.png" width="24.5%">
+  <img src="./docs/images/2.png" width="24.5%">
+  <img src="./docs/images/3.png" width="24.5%">
+  <img src="./docs/images/4.png" width="24.5%">
+</p>
+
 ## Getting started
 
 In order to build and run the app, you'll need to have [Flutter](https://flutter.dev/) installed.
